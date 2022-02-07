@@ -76,3 +76,30 @@ Seleccionando un caracter seguido de un espacio.
 ```regex
 .{10}
 ```
+
+## Las clases predefinidas y construidas
+
+Encontrando digitos
+
+\d: Encontrar digitos, todo lo que sea un numero.
+
+\w: Encontrar todo lo que sea una letra o un numero. No contiene las letras acentuadas.
+
+**Dígitos: \d**
+
+- Encuentra todos los dígitos de 0 a 9.
+- \d es equivalente a poner [0-9].
+- Si en vez de \d, usamos por ejemplo [0-2] nos encontrará solamente los dígitos de 0 a 2.
+- Podemos usar “\D” para encontrar justo lo contrario, todo lo que no son dígitos.
+
+**Palabras: \w**
+
+- Encuentra todo lo que puede ser parte de una palabra, tanto letras (minúsculas o mayúsculas) como números.
+- \w es equivalente a poner [a-zA-Z0-9_].
+- Si en vez de \w, usamos por ejemplo [a-zA-Z] nos encontrará solamente las letras.
+- Podemos usar “\W” para encontrar justo lo contrario, todos los caracteres que no son parte de palabras.
+
+**Espacios: \s**
+
+- Encuentra todos los espacios (los saltos de línea también son espacios).
+- Podemos usar “\S” para encontrar justo lo contrario, todo lo que no son espacios.
