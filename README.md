@@ -33,3 +33,28 @@ Se usa mucho en logs de servidores que son archivos enormes para analizarlos
 Las expresiones regulares son usadas tanto en frontend como en backend
 
 ## Introducción al lenguaje de expresiones regulares
+
+Con las expresiones regulares vamos a solucionar problemas reales, problemas del día a día.
+
+¿Qué pasa si queremos buscar en un texto (txt, csv, log, cualquiera), todos los números de teléfonos que hay?
+Tendríamos que considerar por ejemplo, que un teléfono de México serían 10 dígitos; hay quienes los separan con guión, hay quienes los separan con puntos, hay quienes no los separan sino que tienen los 10 dígitos exactos, y este patrón puede cambiar para otros países.
+
+Esto mismo sucede con números de tarjetas de crédito, códigos postales, dirección de correos, formatos de fechas o montos, etc.
+
+Una tarjeta de credito tiene 16 dígitos
+
+Identificar si en un numero decimal en ingles o español, habiendo un punto o una coma.
+
+Identificar un numero de telefono separado por guiones.
+
+[Herramienta para evaluar expresiones regulares](https://regex101.com/)
+
+Se busca clasificar lo que queremos extraer en clases de expresiones regulares.
+
+La expresion puede ser tan abierta como queramos, teniendo 8 o 4 digitos o mas, y siendo tan especifica como necesitemos.
+
+## El caracter (.)
+
+**Cadena de Caracteres**: Es un carácter ASCII generalmente, seguido de otro carácter y de otro. No todos son visibles, el espacio por ejemplo. Cada carácter es un carácter.
+
+El caracter (.): Encuentrame todo lo que sea un carácter
