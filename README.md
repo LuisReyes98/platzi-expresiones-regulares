@@ -57,4 +57,22 @@ La expresion puede ser tan abierta como queramos, teniendo 8 o 4 digitos o mas, 
 
 **Cadena de Caracteres**: Es un carácter ASCII generalmente, seguido de otro carácter y de otro. No todos son visibles, el espacio por ejemplo. Cada carácter es un carácter.
 
-El caracter (.): Encuentrame todo lo que sea un carácter
+El caracter (.): Dentro de una exprecion regular encuentra todo lo que sea un carácter en el texto.
+
+Seleccionando cada caracter individual.
+
+Seleccionando un caracter seguido de un espacio.
+
+```regex
+. 
+```
+
+10 caracteres seguidos
+
+```regex
+..........
+```
+
+```regex
+.{10}
+```
