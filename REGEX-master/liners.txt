@@ -32,3 +32,9 @@ dominio.com
 [LOG ENTRY] [LOG] [user:@beco] Clicked here
 [LOG ENTRY] [LOG] [user:@beco] Rated the app
 [LOG ENTRY] [LOG] [user:@beco] Logged out
+
+#FF9
+#FF90F0
+#FF90F055
+#4F90F059
+

@@ -79,27 +79,42 @@ Seleccionando un caracter seguido de un espacio.
 
 ## Las clases predefinidas y construidas
 
-Encontrando digitos
+Hay que ser cuidadoso con lo que se busca ya que casi siempre las expresiones regulares encontrarán algo y puede que no sea lo que queremos exactamente.
 
-\d: Encontrar digitos, todo lo que sea un numero.
-
-\w: Encontrar todo lo que sea una letra o un numero. No contiene las letras acentuadas.
-
-**Dígitos: \d**
+### Dígitos: \d
 
 - Encuentra todos los dígitos de 0 a 9.
 - \d es equivalente a poner [0-9].
 - Si en vez de \d, usamos por ejemplo [0-2] nos encontrará solamente los dígitos de 0 a 2.
 - Podemos usar “\D” para encontrar justo lo contrario, todo lo que no son dígitos.
 
-**Palabras: \w**
+### Palabras: \w
 
 - Encuentra todo lo que puede ser parte de una palabra, tanto letras (minúsculas o mayúsculas) como números.
 - \w es equivalente a poner [a-zA-Z0-9_].
 - Si en vez de \w, usamos por ejemplo [a-zA-Z] nos encontrará solamente las letras.
 - Podemos usar “\W” para encontrar justo lo contrario, todos los caracteres que no son parte de palabras.
 
-**Espacios: \s**
+### Espacios: \s
 
 - Encuentra todos los espacios (los saltos de línea también son espacios).
 - Podemos usar “\S” para encontrar justo lo contrario, todo lo que no son espacios.
+
+### Saltos de línea: \n
+
+- Todos los saltos de línea (ENTER) que hay en el texto.
+
+### Grupos específicos: [0-9]
+
+- puede ser un reemplazo de \d, pero especificando un rango de dígitos.
+- es más específico y potente.
+- [6-9] nos encontrará solo los dígitos de 6 a 9.
+- [a-zA-Z0-9] todas las letras y los números siendo equivalente a \w.
+- [a-fA-F0-9\.] número hexadecimales, con caracteres del 0 al 9 de la "A" a la F minúscula y mayúscula y los puntos para el decimal.
+- [a-fABCDEF0-5\.] Se puede incluso declarar carácter a carácter sin aprovechar el rango.
+
+### Reto
+
+encontrar digitos hexadecimales de colores
+
+[a-fA-F0-9]{3,6}
