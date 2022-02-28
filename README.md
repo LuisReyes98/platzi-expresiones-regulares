@@ -118,3 +118,49 @@ Hay que ser cuidadoso con lo que se busca ya que casi siempre las expresiones re
 encontrar digitos hexadecimales de colores
 
 [a-fA-F0-9]{3,6}
+
+## Los delimitadores: +, *, ?
+
+\w - caracteres de palabras
+
+\d - digitos
+
+\s - espacios/invisibles en blanco
+
+[0-9] ~ \d
+
+[0-9a-zA-Z] ~ \w
+
+`.*` - Encuentra todos los caracteres agrupando por lineas
+
+\d* - Todos los digitos
+
+\d+ - todos los digitos y mas
+
+`*` greddy - todo
+
+`+` uno o mas seleccionando la lina
+
+\d? hace lo mismo de uno o mas pero no agrupo toda la linea, ademas selecciona los caracteres nulos
+
+\d+[a-z] - Todos los digitos que pueda y que al final tenga una palabra
+
+\d*[a-z] - Una palabra o digito tomando todos los digitos y que termine en una palabra
+
+\d*[a-z][a-z]? - Halla o no digitos, halla una letra, halla o no una letra
+
+\d*[a-z]s - Puede o no tener digitos, tiene una letra y debe terminar en una `s`
+
+\d*[a-z]?s - Puede o no tener digitos, tiene 0 o 1 letra y debe terminar en una `s`
+
+### ¿Cuantas veces debe aparecer o puede aparecer?
+
+`+` - debe aparecer porque es uno o más veces
+
+`*` - puede aparecer, 0 o muchas veces
+
+`?` - puede aparecer, 0 o 1 veces
+
+**Las expresiones regulares son muy potentes creando soluciones escalables y reutilizables para el manejo de textos.**
+
+[debugger de regex](https://www.debuggex.com/)
