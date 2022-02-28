@@ -141,7 +141,7 @@ encontrar digitos hexadecimales de colores
 
 `+` uno o mas seleccionando la lina
 
-\d? hace lo mismo de uno o mas pero no agrupo toda la linea, ademas selecciona los caracteres nulos
+\d? hace lo mismo de uno o mas pero no agrupo toda la linea, ademas selecciona **los caracteres nulos**
 
 \d+[a-z] - Todos los digitos que pueda y que al final tenga una palabra
 
