@@ -164,3 +164,23 @@ encontrar digitos hexadecimales de colores
 **Las expresiones regulares son muy potentes creando soluciones escalables y reutilizables para el manejo de textos.**
 
 [debugger de regex](https://www.debuggex.com/)
+
+## Los contadores {1,4}
+
+Definir cantidad de veces que aparece un caracter
+
+\d{2,2} - exactamente 2 digitos, minimo 2 y maximo 2
+
+\d{2,10} - minimo 2 y maximo 10 digitos
+
+\d{4,} - minimo 4 y maximo infinito
+
+\d{2,2}-?\d{2,2}-?\d{2,2}-?\d{2,2} - numero de telefono de mexico con o sin guiones en pares de dos
+
+\d{2,2}[\-\.]? - con 2 digitos, y se crea la clase de `-` guiones y `.` puntos que pueden o no estar, porque `?` es 0 o 1 veces
+
+[\-\.] - Clase custom que representa la presencia de un guion o punto
+
+[\-\. ] la clase considera guiones, puntos y tambien el espacio en blanco.
+
+(\d{2,2}[\-\. ]?){3,9} - agrupando para delimitar la cantidad de caracteres en la clase que definimos
