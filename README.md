@@ -184,3 +184,70 @@ Definir cantidad de veces que aparece un caracter
 [\-\. ] la clase considera guiones, puntos y tambien el espacio en blanco.
 
 (\d{2,2}[\-\. ]?){3,9} - agrupando para delimitar la cantidad de caracteres en la clase que definimos
+
+## El caso de (?) como delimitador
+
+.+, - Toma palabras separadas por coma `,` pero toma la linea completa
+
+.+?, - Toma palabras separadas por coma `,` pero esta vez tomando la seleccion mas pequeña posible, (util para obtener todas las columnas de un csv por ejemplo)
+
+`?` en este contexto es un selector lazy que dice que vaya tomando las seleccioanes como vayan viniendo, y no tomar tantos caracteres como se pueda.
+
+.+?[,\n]{1,1} - Toma las palabras separadas por coma o que terminan en un salto de linea
+
+**Nota importante** los emojis en ciertos sistemas son hasta 4 caracteres que se muestran como una imagen
+
+**Posibilidades**
+Podemos validar entrada de datos, podemos limpiar data para base de datos, leer archivos etc...
+
+## Not (^), su uso y sus peligros
+
+\D - es la negacion de \d, es decir todo lo que no sea un digito
+
+\S - todo lo que no sea un espacio \s
+
+`^` - es una negacion y nos permite negar clases custom hechas por nosotros
+
+[^0-5a-c] - Los numeros fuera de 0-5 y las letras fuera del rango de a-c
+
+\d\d\D?\d\d\D?\d\d - digitos de a 2 separados por un NO digito
+
+### Notas alumnos, estos son los demas: 😉
+
+\t — Representa un tabulador.
+
+\r — Representa el “retorno de carro” o “regreso al inicio” o sea el lugar en que la línea vuelve a iniciar.
+
+\n — Representa la “nueva línea” el carácter por medio del cual una línea da inicio. Es necesario recordar que en Windows es necesaria una combinación de \r\n para comenzar una nueva línea, mientras que en Unix solamente se usa \n y en Mac_OS clásico se usa solamente \r.
+
+\a — Representa una “campana” o “beep” que se produce al imprimir este carácter.
+
+\e — Representa la tecla “Esc” o “Escape”
+
+\f — Representa un salto de página
+
+\v — Representa un tabulador vertical
+
+\x — Se utiliza para representar caracteres ASCII o ANSI si conoce su código. De esta forma, si se busca el símbolo de derechos de autor y la fuente en la que se busca utiliza el conjunto de caracteres Latin-1 es posible encontrarlo utilizando “\xA9”.
+
+\u — Se utiliza para representar caracteres Unicode si se conoce su código. “\u00A2” representa el símbolo de centavos. No todos los motores de Expresiones Regulares soportan Unicode. El .Net Framework lo hace, pero el EditPad Pro no, por ejemplo.
+
+\d — Representa un dígito del 0 al 9.
+
+\w — Representa cualquier carácter alfanumérico.
+
+\s — Representa un espacio en blanco.
+
+\D — Representa cualquier carácter que no sea un dígito del 0 al 9.
+
+\W — Representa cualquier carácter no alfanumérico.
+
+\S — Representa cualquier carácter que no sea un espacio en blanco.
+
+\A — Representa el inicio de la cadena. No un carácter sino una posición.
+
+\Z — Representa el final de la cadena. No un carácter sino una posición.
+
+\b — Marca la posición de una palabra limitada por espacios en blanco, puntuación o el inicio/final de una cadena.
+
+\B — Marca la posición entre dos caracteres alfanuméricos o dos no-alfanuméricos.
