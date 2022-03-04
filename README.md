@@ -251,3 +251,15 @@ Podemos validar entrada de datos, podemos limpiar data para base de datos, leer 
 \b — Marca la posición de una palabra limitada por espacios en blanco, puntuación o el inicio/final de una cadena.
 
 \B — Marca la posición entre dos caracteres alfanuméricos o dos no-alfanuméricos.
+
+## Reto: Filtrando letras en números telefónicos utilizando negaciones
+
+Soluciones
+
+([\d+][\W]?){6}
+
+\d\d\W?\d\d\W?\d\d\W?
+
+(\d{2}\W?){3}
+
+(\d{1,}[^\w]?){6} - esta solucion no toma los saltos de linea
