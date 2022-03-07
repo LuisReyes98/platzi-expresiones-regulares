@@ -263,3 +263,35 @@ Soluciones
 (\d{2}\W?){3}
 
 (\d{1,}[^\w]?){6} - esta solucion no toma los saltos de linea
+
+## Principio (^) y final de linea ($)
+
+Se usan para que no haya dos matches en una linea,
+
+Estos dos caracteres indican en qué posición de la línea debe hacerse la búsqueda:
+el ^ se utiliza para indicar el principio de línea
+el $ se utiliza para indicar final de línea
+
+^ ------------- $
+
+^\d$ - empieza la linea tiene un solo digito y termina la linea
+
+^\d{3,6}$ - solo entre 3 o 6 digitos por linea
+
+^[^\d].*$ - Toma lineas completas que no empiezan con un digito
+
+^\w+,\w+,\w+$ - 3 palabras separadas por coma `,` por linea, si es un CSV solo si la linea tiene 3 columnas bien formadas
+
+^(\w+,?){3,3}$ - mismo 3 palabras separadas por `,` coma por linea
+
+## Logs
+
+Manejando el ejemplo de logs de liners.txt
+
+^\[LOG.*\[WARN\].*$ - lineas de log warning
+
+^\[LOG.*\[LOG\].*\[user:@beco\].*$ - solo los logs del user beco
+
+^\[LOG.*\[LOG\].\[user:@\w+\].*$ - Logs de cualquier usuario
+
+### Reto example.log
