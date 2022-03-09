@@ -295,3 +295,17 @@ Manejando el ejemplo de logs de liners.txt
 ^\[LOG.*\[LOG\].\[user:@\w+\].*$ - Logs de cualquier usuario
 
 ### Reto example.log
+
+^(\D[\w]+\.?){1,}.*$ - primer tipo de log los mensajes que inician con una dirección en letras que no es una IP
+
+^\[.*\]\s\[error\].+$ - mensaje de error en el segundo tipo de log
+
+## Teléfonos
+
+Conseguir un telefono
+
+^\+?(\d{2,3}[^\da-z]?){2,3}[#pe]?\d*$
+
+Analisis de la expresion:
+
+Quiero una linea que inicie con o sin un simbolo de `+` seguido de un grupo de 2 o 3 digitos, seguido de un no digito que no es una letra, este patron 2 o 3 veces( es decir 2 o 3 grupos de 2 o3 digitos seguidos de un simbolo), seguido de los caracteres `#` o `p` o `e` y un grupo de digitos hasta el final de la linea.

@@ -15,8 +15,6 @@
 13453243fs
 13453243
 
-
-
 hola
 palabra
 hola tambien
@@ -62,7 +60,31 @@ Rodrigo Jiménez Gutiérrez
 56.58.11.12.54
 302-345-9876
 
+# Numeros de telefono mexicanos
 
+555658
+56-58-11
+56.58.11
+56.78-98
+65 09 87
+76y87r98
+76y87r98-NO
+45y78-56
+78.87 65
+78 54-56
++521565811
+58-11-11#246
+55-5632-0417
+55256048p123
+55256048e123
+
+
+5555523121
+56-58-11-12-54
+56.58.11.12.54
+
+
+# Nota [#pe]?\d*
 
 esto.es_un.mail@mail.com
 esto.es_un.mail+complejo@mail.com
@@ -94,16 +116,6 @@ dominio.com
 [LOG ENTRY] [LOG] [user:@beco] Rated the app
 [LOG ENTRY] [LOG] [user:@beco] Logged out
 [LOG LINE] [LOG] [user:@celismx] Logged in
-
-
-
-
-5555523121
-56-58-11-12-54
-56.58.11.12.54
-
-
-
 
 
 #FF9
