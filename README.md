@@ -309,3 +309,21 @@ Conseguir un telefono
 Analisis de la expresion:
 
 Quiero una linea que inicie con o sin un simbolo de `+` seguido de un grupo de 2 o 3 digitos, seguido de un no digito que no es una letra, este patron 2 o 3 veces( es decir 2 o 3 grupos de 2 o3 digitos seguidos de un simbolo), seguido de los caracteres `#` o `p` o `e` y un grupo de digitos hasta el final de la linea.
+
+## URLs
+
+https?:\/\/[\w\-\.]+\.\w{2,5}\/? - El dominio de una URL
+
+https?:\/\/[\w\-\.]+\.\w{2,5}\/?\S* - Trae la url completa
+
+`(https?:\/\/)[\w\-\.]+\.\w{2,5}\/?\S*` - Trae la url completa
+
+@[\w\.\-]{2,}\.\w{2,5} - Dominio de los correos electronicos
+
+[\w\._]{1,30}\+?[\w]{0,10}@ - Nombre del correo electronico
+
+[\w\._]{1,30}\+?[\w]{0,10}@[\w\.\-]{2,}\.\w{2,5} - correo electronico
+
+[\w\._]{1,30}\+?[\w]{0,10}@[\w\.\-]{2,}\.\w{2,5}
+
+El final de la expresion regular evalua el top-level domain (TLD)
