@@ -318,12 +318,26 @@ https?:\/\/[\w\-\.]+\.\w{2,5}\/?\S* - Trae la url completa
 
 `(https?:\/\/)[\w\-\.]+\.\w{2,5}\/?\S*` - Trae la url completa
 
+## Mails
+
 @[\w\.\-]{2,}\.\w{2,5} - Dominio de los correos electronicos
 
 [\w\._]{1,30}\+?[\w]{0,10}@ - Nombre del correo electronico
 
-[\w\._]{1,30}\+?[\w]{0,10}@[\w\.\-]{2,}\.\w{2,5} - correo electronico
+[\w\._]{1,30}\+?[\w]{0,10}@[\w\.\-]{2,}\.\w{2,5} - correo electronico completo
 
 [\w\._]{1,30}\+?[\w]{0,10}@[\w\.\-]{2,}\.\w{2,5}
 
 El final de la expresion regular evalua el top-level domain (TLD)
+
+## Localizaciones
+
+Las expresiones regulares permiten saber si la coordenada esta escrita en el formato correcto, no hay forma de saber si esta el valor entre 0 y 180 ya se encargara el lenguaje de programacion que usemos de validar si efectivamente es una coordenada valida.
+
+No podemos determinar si es un valor correcto solo si tiene la forma correcta.
+
+[\-]?\d{1,3}\.\d{1,6},\s?[\-]?\d{1,3}\.\d{1,6} - Solo la latitud y longitud
+
+^[\-]?\d{1,3}\.\d{1,6}\s?,\s?[\-]?\d{1,3}\.\d{1,6},.*$ - toda la latitud y longitud con los metros sobre el nivel del mar
+
+

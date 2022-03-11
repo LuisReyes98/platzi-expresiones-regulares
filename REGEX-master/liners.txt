@@ -183,3 +183,4 @@ http://localhost:3000/search?city=Barcelona
 
 www.sitiodeejemplo.net/pagina.php?nombredevalor1=valor1&nombredevalor2=valor2
 http://www.sitiodeejemplo.net/pagina.php?nombredevalor1=valor1&nombredevalor2=valor2
+
