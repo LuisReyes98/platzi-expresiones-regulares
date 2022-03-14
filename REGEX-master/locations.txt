@@ -10,6 +10,18 @@
 -99.204654,19.428952, 2275.58
 -99.204654,19.428952,
 
-
+# grados entre 0 y 180, Minutos entre 0 y 60, segundos entre 0 y 60, y centecimas de segundo entre 0 y 100
+# Grados Minutos' Segundos'.Centecimas de Segundo
+# Inicia Este u Oeste y sigue Norte o Sur
 -99 12' 34.08"W, 19 34' 56.98"N
 -34 54' 32.00"E, -3 21' 67.00"S
+-34 54' 32.00"E, -3 21' 67.00"S@
+-354 54' 32.00"E, -3 21' 67.00"S
+-3154 54' 32.00"E, -3 21' 67.00"S
+
+
+# Localizaciones usando el sistema de what3words
+
+///brand.evolving.caged
+///deal.risk.fetches
+///hazards.trendsetter.encoder
