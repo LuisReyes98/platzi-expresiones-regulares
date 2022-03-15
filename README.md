@@ -340,15 +340,19 @@ No podemos determinar si es un valor correcto solo si tiene la forma correcta.
 
 ^[\-]?\d{1,3}\.\d{1,6}\s?,\s?[\-]?\d{1,3}\.\d{1,6},.*$ - Coordenada numerica, toda la latitud y longitud con los metros sobre el nivel del mar
 
-[\-]?\d{1,3}\s\d{1,2}'\s\d{1,2}\.\d{2,2}"[WE], - Primer segmento con Coordenada con grados, minutos y segundos
+`[\-]?\d{1,3}\s\d{1,2}'\s\d{1,2}\.\d{2,2}"[WE],` - Primer segmento con Coordenada con grados, minutos y segundos
 
-^[\-]?\d{1,3}\s\d{1,2}'\s\d{1,2}\.\d{2,2}"[WE],\s[\-]?\d{1,3}\s\d{1,2}'\s\d{1,2}\.\d{2,2}"[NS]$ - Toda la latitud y longitud en grados, minutos, segundos
+`^[\-]?\d{1,3}\s\d{1,2}'\s\d{1,2}\.\d{2,2}"[WE],\s[\-]?\d{1,3}\s\d{1,2}'\s\d{1,2}\.\d{2,2}"[NS]$` - Toda la latitud y longitud en grados, minutos, segundos
 
 Proyecto que divide todo el mundo en una matriz de cuadrados de 3 x 3 metros y les asigna 3 palabras
 https://what3words.com/swung.ember.greeting
 
-^(\/){3,3}[a-z]{3,}\.[a-z]{3,}\.[a-z][a-z]+ - ubicacion segun 3 words
+`^(\/){3,3}[a-z]{3,}\.[a-z]{3,}\.[a-z][a-z]+` - ubicacion segun 3 words
 
 ## Nombres(?) Reto
 
-^[A-ZÁÉÍÓÚ][\wáéíóúñ]+ - Nombres latinos
+`^[A-ZÁÉÍÓÚ][\wáéíóúñ]+` - Nombres latinos
+
+`^([A-ZÁÉÍÓÚ][\wáéíóúñ]+\s?,?)+$` - Nombres separados por espacios
+
+`^.+\s?$` - Todos los nombres del mundo termina siendo cualquier string
