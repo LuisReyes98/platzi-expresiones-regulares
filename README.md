@@ -356,3 +356,10 @@ https://what3words.com/swung.ember.greeting
 `^([A-ZÁÉÍÓÚ][\wáéíóúñ]+\s?,?)+$` - Nombres separados por espacios
 
 `^.+\s?$` - Todos los nombres del mundo termina siendo cualquier string
+
+## Búsqueda y reemplazo
+
+`^\d+::([\w\s:,\(\)\.'éè\-Àûîêôóí&!ã\?]+)\s\((\d{4})\)::.*`
+
+Esta sintaxis reemplaza todo por los grupos de los parentesis
+`$1,$2`
