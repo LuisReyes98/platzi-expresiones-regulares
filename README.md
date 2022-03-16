@@ -363,3 +363,21 @@ https://what3words.com/swung.ember.greeting
 
 Esta sintaxis reemplaza todo por los grupos de los parentesis
 `$1,$2`
+
+{title: "$1", year: "$2"} - Reemplazarlo como un json
+
+insert into movies (title, year) values ('$1', '$2') - Reemplazarlo como una consulta SQL
+
+^\d+::([\w\s:,\(\)\.'éè\-Àûîêôóí&!ã\*\?]+)\s\((\d{4})\)::.*$ - obtener el titulo y el año
+
+`^\d+::([\w\s:,\(\)\.'éè\-Àûîêôóí&!ã\*\?]+)\s\((\d{4})\)::(([\w\-']+[\|]?)+)$` - Permitiendo con $3 obtener las categorías
+
+## Uso de REGEX para descomponer querys GET
+
+Obteniendo todos los parametros get de una query
+
+los parametros de una query get inician en ? y son separarados por &
+por lo cual inicia la variable con una ? o un & y el valor viene luego de un igual y puede o no terminar en un & por lo cual el valor es todo el texto que viene que no sea un &.
+
+```[\?&](\w+)=([^&\n]+)```
+
