@@ -395,3 +395,28 @@ Usaremos las expresiones regulares en:
 - Javascript
 
 ## Perl
+
+## PHP
+
+## Utilizando PHP en la práctica
+
+Las expresiones regulares pueden tener banderas que afectan la búsqueda, éstas deberán de estar hasta el final de la línea.
+
+Listado de Banderas en js:
+`i`
+Con este indicador, la búsqueda no distingue entre mayúsculas y minúsculas: no hay diferencia entre A y a
+
+`g`
+Con esta marca, la búsqueda busca todas las coincidencias, sin ella, solo se devuelve la primera coincidencia.
+
+`m`
+Modo multilínea
+
+`s`
+Habilita el modo “dotall”, que permite un punto. para que coincida con el carácter de nueva línea \ n
+
+`u`
+Permite el soporte completo de Unicode. La bandera permite el procesamiento correcto de pares sustitutos.
+
+`y`
+Modo “adhesivo”: búsqueda en la posición exacta del texto
