@@ -420,3 +420,19 @@ Permite el soporte completo de Unicode. La bandera permite el procesamiento corr
 
 `y`
 Modo “adhesivo”: búsqueda en la posición exacta del texto
+
+## JAVA
+
+Para compilar:
+
+```sh
+javac <NOMBRE_DEL_ARCHIVO.java>
+```
+
+Para ejecutar:
+
+```sh
+java <NOMBRE_DEL_ARCHIVO>
+```
+
+Usar java tiene la ventaja de que como tiene un garbage colector es capaz de tratar con archivos que pesen teras sin colapsar la memoria, como harian lenguajes como Python o Perl que luego de cientos de miles de lineas el cache empezaria a ocupar demasiada memoria en el procesador.
