@@ -12,6 +12,7 @@ public class regex {
   public static void main(String[] args) {
     String file = "./files/results.csv";
 
+    // Por que en java el \ en un string ya es un escape para ponerlo en un String hay que escribirlo doble \\
     Pattern pat = Pattern.compile("^2011\\-.*[zk].*$");
 
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+<body>
+  <input
+    type="text"
+    name="email"
+    onkeyup="checkEmail(this.value)"
+    id="email"
+  >
+  <input
+    type="button"
+    value="enviar"
+    disabled
+    id="boton"
+  >
+</body>
+<script>
+  function checkEmail(email) {
+    console.log(email);
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
+
+    var result = re.test(String(email).toLowerCase());
+
+    if (result) {
+      document.getElementById('boton').disabled = false;
+      document.getElementById('email').style.backgroundColor = 'green';
+    } else {
+      document.getElementById('boton').disabled = true;
+      document.getElementById('email').style.backgroundColor = 'red';
+    }
+    console.log(result);
+  }
+
+  function testEmail(email) {
+    const re = /^\w{5,10}@[\w\.]{2,10}\.\w{2,5}$/i
+    const res = re.test(String(email).toLowerCase());
+    if (res) {
+      document.getElementById('boton').disabled = false;
+      document.getElementById('email').style.backgroundColor = 'green';
+    } else {
+      document.getElementById('boton').disabled = true;
+      document.getElementById('email').style.backgroundColor = 'red';
+    }
+    console.log(res);
+  }
+</script>
+</html>
