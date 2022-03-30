@@ -463,7 +463,8 @@ cat results.csv | grep -E 'Brazil' | grep Uruguay
 cat results.csv | grep -E 'Brazil' | grep Uruguay | grep '^1950'
 ```
 
-Un or inicia con 19 o 2018
+**OR** la linea inicia con 19 o 2018
+
 ```sh
 cat results.csv | grep -E '^(19|2018)'
 ```
