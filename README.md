@@ -121,7 +121,7 @@ encontrar digitos hexadecimales de colores
 
 ## Los delimitadores: +, *, ?
 
-\w - caracteres de palabras
+\w - caracteres de palabras es equivalente a [a-zA-Z0-9_]
 
 \d - digitos
 
@@ -462,3 +462,16 @@ cat results.csv | grep -E 'Brazil' | grep Uruguay
 ```sh
 cat results.csv | grep -E 'Brazil' | grep Uruguay | grep '^1950'
 ```
+
+Un or inicia con 19 o 2018
+```sh
+cat results.csv | grep -E '^(19|2018)'
+```
+
+## OR operator — | or []
+
+a(b|c)     matches a string that has a followed by b or c (and captures b or c) -> Try it!
+
+a[bc]      same as previous, but without capturing b or c
+
+[Articulo de medium de como usar regex](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)
