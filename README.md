@@ -436,3 +436,29 @@ java <NOMBRE_DEL_ARCHIVO>
 ```
 
 Usar java tiene la ventaja de que como tiene un garbage colector es capaz de tratar con archivos que pesen teras sin colapsar la memoria, como harian lenguajes como Python o Perl que luego de cientos de miles de lineas el cache empezaria a ocupar demasiada memoria en el procesador.
+
+## Javascript
+
+## `grep` y `find` desde consola
+
+```sh
+ cat ./files/results.csv | grep ^2012
+```
+
+```sh
+ cat results.csv | grep -E ',3[0-9],'
+```
+
+```sh
+cat results.csv | grep -E 'SE$'
+```
+
+Podemos encadenar grep
+
+```sh
+cat results.csv | grep -E 'Brazil' | grep Uruguay
+```
+
+```sh
+cat results.csv | grep -E 'Brazil' | grep Uruguay | grep '^1950'
+```
